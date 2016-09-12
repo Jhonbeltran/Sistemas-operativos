@@ -12,7 +12,7 @@
 <div class="navbar-fixed">
 	<nav>
     	<div class="nav-wrapper teal">
-      		<a href="index.html" class="brand-logo titulo">Instalación Dual</a>
+      		<a href="index.html" class="brand-logo titulo">Instalando Debian</a>
       		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">+</i></a>
       		<ul class="right hide-on-med-and-down">
         		<li><a href="windows.html">Windows xp</a></li>
@@ -30,7 +30,7 @@
 			<div class="col s12 m12">
 				<div class="card">
 					<div class="card-content justified">
-	              			<p class="flow-text">Para realizar la instalación de los dos sistemas operativos vamos a usar el software para virtualización <a href="https://www.virtualbox.org" target="_blank">VirtualBox</a> en donde crearemos una maquina virtual con un disco de unos 20GB.</p>
+	              			<p class="flow-text">Continuando nuestro proceso de instalación de dos sistemas operativos en una misma maquina vamos a instalar una distribución de GNU/Linux (Debian 8) la cual nos va a instalar el Grub para poder arrancar el sistema operativo que querramos al iniciar nuestra maquina. Los pasos son: </p>
 	            	</div>
 				</div>
 	    	</div>
@@ -38,15 +38,192 @@
         <div class="col s12 m6">
         		<div class="card">
             		<div class="card-image">
-              			  <img class="materialboxed" data-caption="Para tener los dos S.O vamos a crear la primera particion presionando la tecla c, luego definimos el tamaño y damos enter." src="assets/Screenshot at 2016-09-03 19:40:21.png">
-              			<span class="card-title">1. Creamos la particion</span>
+              			  <img class="materialboxed" data-caption="Iniciar nuestra maquina desde la imagen iso de debian." src="assets/Screenshot at 2016-09-04 11:50:58.png">
+              			<span class="card-title">1. Iniciar el instalador grafico</span>
             		</div>
             		<div class="card-content">
-              			<p>Para tener los dos S.O vamos a crear la primera particion presionando la tecla c, luego definimos el tamaño y damos enter.</p>
+              			<p>Vamos a cambiar el cd de arranque en la maquina virtual por el de debian, luego seleccionamos la opcion Graphical Install.</p>
             		</div>
           		</div>
-        	</div>
+        </div>	
+        
+        <div class="col s12 m6">
+        		<div class="card">
+            		<div class="card-image">
+              			  <img class="materialboxed" data-caption="Seleccionamos el idioma." src="assets/Screenshot at 2016-09-04 11:53:15.png">
+              			<span class="card-title teal-text text-darken-2">2. Seleccionamos el Idioma</span>
+            		</div>
+            		<div class="card-content">
+              			<p>El idioma que definamos va a ser usado en el proceso de instalación y será el lenguaje predetermiando de nuestro sistema operativo.</p>
+            		</div>
+          		</div>
+        </div>
+        
+        <div class="col s12 m6">
+        		<div class="card">
+            		<div class="card-image">
+              			  <img class="materialboxed" data-caption="Seleccionamos el pais" src="assets/Screenshot at 2016-09-04 11:53:21.png">
+              			<span class="card-title teal-text text-darken-2">3. Seleccionamos el Pais</span>
+            		</div>
+            		<div class="card-content">
+              			<p>La lista de paises estará definida por el lenguaje que escojamos en el anterior paso.</p>
+            		</div>
+          		</div>
+        </div>
+        
+        <div class="col s12 m6">
+        		<div class="card">
+            		<div class="card-image">
+              			  <img class="materialboxed" data-caption="Seleccionamos el teclado" src="assets/Screenshot at 2016-09-04 11:53:30.png">
+              			<span class="card-title teal-text text-darken-2">4. Seleccionamos el teclado</span>
+            		</div>
+            		<div class="card-content">
+              			<p>De acuerdo a la configuración del teclado que tiene nuestra pc buscamos la que mejor se le adapte.</p>
+            		</div>
+          		</div>
+        </div>
         	
+        <div class="col s12 m6">
+        		<div class="card">
+            		<div class="card-image">
+              			  <img class="materialboxed" data-caption="Seleccionamos el teclado" src="assets/Screenshot at 2016-09-04 11:54:53.png">
+              			<span class="card-title teal-text text-darken-2">5. Introducimos el nombre del equipo</span>
+            		</div>
+            		<div class="card-content">
+              			<p>Este nombre aparecerá en nuestra terminal como el superUsuario user@superuser.</p>
+            		</div>
+          		</div>
+        </div>
+        
+        <div class="col s12 m6">
+        		<div class="card">
+            		<div class="card-image">
+              			  <img class="materialboxed" data-caption="Creamos una contraseña superuser" src="assets/Screenshot at 2016-09-04 11:55:31.png">
+              			<span class="card-title teal-text text-darken-2">6. Creamos una contraseña superuser</span>
+            		</div>
+            		<div class="card-content">
+              			<p>La contraseña de super usuario la vamos a requerir cada que querramos instalar algun programa, actualizar el sistema, entre otras cosas.</p>
+            		</div>
+          		</div>
+        </div>
+        
+        <div class="col s12 m6">
+        		<div class="card">
+            		<div class="card-image">
+              			  <img class="materialboxed" data-caption="Agregamos nuestro nombre completo" src="assets/Screenshot at 2016-09-04 11:55:59.png">
+              			<span class="card-title teal-text text-darken-2">7. Agregamos nuestro nombre completo</span>
+            		</div>
+            		<div class="card-content">
+              			<p>Agregarlo nos ayudará a tener una mayor personalización de nuestra cuenta, asi como una mejor integracion con los servicios que nos provee debian.</p>
+            		</div>
+          		</div>
+        </div>
+        
+        <div class="col s12 m6">
+        		<div class="card">
+            		<div class="card-image">
+              			  <img class="materialboxed" data-caption="Creamos el nombre del usuario" src="assets/Screenshot at 2016-09-04 11:56:27.png">
+              			<span class="card-title teal-text text-darken-2">8. Creamos el nombre del usuario</span>
+            		</div>
+            		<div class="card-content">
+              			<p>Este nombre va a ser usado por la cuenta normal del sistema, cuando se requieran permisos nos va a solicitar la contraseña del superusuario.</p>
+            		</div>
+          		</div>
+        </div>
+        
+        <div class="col s12 m6">
+        		<div class="card">
+            		<div class="card-image">
+              			  <img class="materialboxed" data-caption="Creamos el nombre del usuario" src="assets/Screenshot at 2016-09-04 11:56:27.png">
+              			<span class="card-title teal-text text-darken-2">9. Creamos el nombre del usuario</span>
+            		</div>
+            		<div class="card-content">
+              			<p>Este nombre va a ser usado por la cuenta normal del sistema (la cual tambien va a requerir contraseña), cuando se requieran permisos especiales nos va a solicitar la contraseña del superusuario.</p>
+            		</div>
+          		</div>
+        </div>
+        <div class="col s12 m6">
+        		<div class="card">
+            		<div class="card-image">
+              			  <img class="materialboxed" data-caption="Definimos el particionado de disco" src="assets/Screenshot at 2016-09-04 11:57:56.png">
+              			<span class="card-title teal-text text-darken-2">10. Definimos el particionado de disco</span>
+            		</div>
+            		<div class="card-content">
+              			<p>Justo despues de que el asistente de instalación configure el reloj aparecerá el modulo de particionado de disco en donde escogeremos el modo manual. definiremos 3 particiones fisicas en el espacio libre que teniamos.</p>
+              			<p>solo tengan en cuenta estas 3 las demas que se ven en la siguiente imagen sin irrelevantes en este punto.</p>
+            		</div>
+          		</div>
+        </div>
+                
+        <div class="col s12 m6">
+        		<div class="card">
+            		<div class="card-image">
+              			  <img class="materialboxed" data-caption="Definimos el particionado de disco" src="assets/particiones.png">
+              			<span class="card-title teal-text text-darken-2">Estas son las particiones que ordené para este ejemplo</span>
+            		</div>
+            		<div class="card-content">
+              			<ul>
+              			    <li>- Una particion Swap como area de intercambio</li>
+              			    <li>- Una particion / (root) en formato ext4 en donde instalaremos el sistema operativo la cual marcaremos como particion de arranque</li>
+              			    <li>- Una particion /home en donde almacenaremos nuestros archivos como multimedia entre otros</li>
+              			</ul>
+            		</div>
+          		</div>
+        </div>
+        
+        <div class="col s12 m6">
+        		<div class="card">
+            		<div class="card-image">
+              			  <img class="materialboxed" data-caption="En este paso el asistente de instalación va a copiar los datos al disco duro para iniciar con la instalacion" src="assets/Screenshot at 2016-09-04 14:14:56.png">
+              			<span class="card-title teal-text text-darken-2">11. Instalacion del sistema</span>
+            		</div>
+            		<div class="card-content">
+              			<p>En este paso el asistente de instalación va a copiar los datos al disco duro para iniciar con la instalacion. Los archivos de instalacion se van a ejecutar directamente desde el disco duro. Luego de que se copien los archivos el programa va a instalar carcador de arranque GRUB. El cual va detectar el sistema operativo que tengamos instalado previamente para que nos permita iniciar con el so que queramos. </p>
+            		</div>
+          		</div>
+        </div>
+        
+        <div class="col s12 m6">
+        		<div class="card">
+            		<div class="card-image">
+              			  <img class="materialboxed" data-caption="Instalación del cargador de arranque" src="assets/Screenshot at 2016-09-04 14:46:25.png">
+              			<span class="card-title teal-text text-darken-2">12. Instalación del cargador de arranque</span>
+            		</div>
+            		<div class="card-content">
+              			<p>En este punto seleccionaremos el disco que esta usando la maquina virtual. </p>
+            		</div>
+          		</div>
+        </div>
+        
+        <div class="col s12 m6">
+        		<div class="card">
+            		<div class="card-image">
+              			  <img class="materialboxed" data-caption="GRUB" src="assets/Screenshot at 2016-09-04 14:51:04.png">
+              			<span class="card-title teal-text text-darken-2">13. Seleccionamos que os iniciar</span>
+            		</div>
+            		<div class="card-content">
+              			<p>Usando el GRUB al iniciar nuestra maquina luego de que la instalación termine podremos escoger que sistema operativo arrancaremos. </p>
+            		</div>
+          		</div>
+        </div>
+        
+        <div class="col s12 m6">
+        		<div class="card">
+            		<div class="card-image">
+              			  <img class="materialboxed" data-caption="Debian 8" src="assets/Screenshot at 2016-09-04 14:53:35.png">
+              			<span class="card-title teal-text text-darken-2">14. Hemos terminado</span>
+            		</div>
+            		<div class="card-content">
+              			<p>Enhorabuena!. </p>
+            		</div>
+            		<div class="card-action center-align">
+                    <a href="index.html">Inicio</a>
+           	    </div>
+          		</div>
+          		
+        </div>
+        
+        
       	</div>
 	</div>
 
