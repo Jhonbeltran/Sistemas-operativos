@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Sistemas Operativos</title>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/css/materialize.min.css">
+  	<link rel="stylesheet" href="src/styles.css">
+  	<link href="https://fonts.googleapis.com/css?family=Baloo+Tamma" rel="stylesheet">
+  	<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no" />
+</head>
+<body>
+<div class="navbar-fixed">
+	<nav>
+    	<div class="nav-wrapper teal">
+      		<a href="index.html" class="brand-logo titulo">Sistemas operativos</a>
+      		<a href="#" data-activates="mobile-demo" class="button-collapse"><i class="material-icons">+</i></a>
+      		<ul class="right hide-on-med-and-down">
+        		<li><a href="linux.html">GNU/Linux</a></li>
+        		<li><a href="mac.html">Mac Os</a></li>
+        		<li><a href="win.html">Windows</a></li>
+      		</ul>
+      		<ul class="side-nav" id="mobile-demo">
+        		<li><a href="linux.html">GNU/Linux</a></li>
+        		<li><a href="mac.html">Mac Os</a></li>
+        		<li><a href="win.html">Windows</a></li>
+      		</ul>
+    	</div>
+  </nav>
+</div>
+	<div class="container">
+		<div class="row">
+		    <div class="col s12">
+			    <div class="card">
+                    <div class="card-content">
+                      <h2 class="teal-text">¿Que es un sistema Operativo?</h2>
+                      <p class="flow-text">Un sistema operativo (s.o) es un conjunto de servicios (programas) los cuales hacen de puente entr el usuario que se comunica en lenguaje natural y la maquina que entiende lenguaje binario.</p>
+                    </div>
+                    
+              </div>
+	    	</div>
+	    	   	
+	    	<div class="col s12 m6">
+			    <div class="card">
+                    <div class="card-content">
+                      <h3 class="teal-text">¿Que sucede en el proceso de inicio?</h3>
+                      <p class="flow-text">
+                          <ol>
+                              <li>Presionamos el boton de encendido cerrando el circuito entre la fuente y la placa base.</li>
+                              <li>Cuando la placa base esta siendo alimentada le envia una indicación a la Bios para que inicie.</li>
+                              <li>La Bios hace un check de todos los perifericos conectados en donde busca los controladores y comprueba que todo esté funcionando.</li>
+                              <li>La Bios le envia un mensaje a la memoria RAM para que se comunique con el disco duro.</li>
+                              <li>La RAM A la indicacion para que el disco duro inicie en su Zona 0 (boot.init).</li>
+                              <li>El disco duro carga los archivos necesarios a la memoria ram y pide que se ejecute el sistema operativo (system.init).</li>
+                              <li>El sistema inicia y va a estar listo hasta que la barra de tareas inicie (antes de eso va a estar cargando los servicios).</li>
+                          </ol>
+                      </p>
+                    </div>
+              </div>
+	    	</div>
+	    	
+	    	<div class="col s12 m6">
+	    	    <div class="card">
+				    <div class="card-image center-align">
+              			 <img class="materialboxed" data-caption="Partes de la tarjeta madre" src="assets/Proceso%20de%20inicio.jpg">
+                    </div>
+                    
+				</div>
+        </div>
+	    	
+	   </div>
+    </div>
+	
+
+	<footer class="page-footer teal">
+        <div class="container">
+            <div class="row">
+              <div class="col l6 s12">
+                <h5 class="white-text">Sistemas Operativos</h5>
+                <p class="grey-text text-lighten-4">Esta pagina hace parte de la infografía necesaria para la clase de Sistemas operativos de la Universidad de Cundinamarca.</p>
+              </div>
+              <div class="col l4 offset-l2 s12">
+                
+                <ul>
+                  <li><a class="grey-text text-lighten-3" href="../i/index.html">Instalacion de windows xp y debian 8</a></li>
+                  <li><a class="grey-text text-lighten-3" href="../m/index.html">La Tarjeta madre</a></li>
+                  <li><a class="grey-text text-lighten-3" href="#!">Historia de los Sistemas operativos</a></li>
+                </ul>
+              </div>
+            </div>
+        </div>
+        <div class="footer-copyright">
+            <div class="container">
+            © 2016 Jhonbeltran, All rights reserved
+            <a class="grey-text text-lighten-4 right" href="#!"></a>
+            </div>
+        </div>
+    </footer>
+	<!-- JQuery -->
+ <script src="https://code.jquery.com/jquery-3.1.0.min.js" integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s=" crossorigin="anonymous"></script>
+ <!-- Compiled and minified JavaScript -->
+ <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.6/js/materialize.min.js"></script>
+ <script src="src/code.js"></script>
+</body>
+</html>
