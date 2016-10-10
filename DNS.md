@@ -7,10 +7,18 @@ Si, con un DNS tipo A cuando asociamos mas de una ip a un domino el va a empezar
 
 #Recuerda
 
-cada 60 segundos (Tiempo de vida) todos los servidores y todos los navegadores van a volver a renovar el domino.
+cada N segundos (Tiempo de vida) todos los servidores y todos los navegadores van a volver a renovar el domino.
 
 subdominio.dom.ino
 
 ##¿Que es un DNS tipo CNAME?
 
 Un CNAME es un alias a cualquier dominio en internet, por ejemplo, asociamos jhon.io como CNAME a fredy.com, lo primero que se va a resolver es a que apunta el dominio de jhon.io despues de ver que jhon.io apunta a fredy.com se va a resolver a que apunta fredy.com. El registro CNAME no permite tener multiples apuntadores.
+
+##¿Que es un DNS tipo MX?
+
+Permite saber hacia donde va a ir el trafico del correo. Se pueden tener multiples MX y poseen una prioridad, si uno de ellos está ocupado responde el siguiente en prioridad.
+
+##¿Que es un DNS tipo TXT?
+
+Son muy usados para evitar el spam en los correos.
